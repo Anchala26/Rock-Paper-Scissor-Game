@@ -78,12 +78,12 @@ function hide_comp_rings() {
   a3Comp.style.visibility = "hidden";
   cchoice.style.visibility = "visible";
   a1Comp.style.animation = "none";
-  a2Comp.style.animation = "none";
+  a2.style.animation = "none";
 }
 
 // choice selection by computer
 function random_choice() {
-  let option = ["stone", "paper", "scissors"];
+  let option = ["stone", "paper", "scissor"];
   let randomChoice = Math.floor(Math.random() * 3);
   return option[randomChoice];
 }
@@ -189,11 +189,9 @@ function scissor() {
 
 // for scores
 
-// Initialize the user's score from localStorage or set to 0 if not found
 let userScore = parseInt(localStorage.getItem("userScore")) || 0;
 let displayUserScore = document.getElementById("displayUserScore");
 
-// Initialize the computer's score from localStorage or set to 0 if not found
 let compScore = parseInt(localStorage.getItem("compScore")) || 0;
 let displayCompScore = document.getElementById("displayCompScore");
 
