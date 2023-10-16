@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone-Paper-Scissor</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:500&display=swap"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main-m">
+      <div class="heading">
+        <div>
+          <h1>ROCK</h1>
+          <h1>PAPER</h1>
+          <h1>SCISSORS</h1>
+        </div>
+        <div class="score-tag">
+          <div class="score-box">
+            <h4>COMPUTER<br />SCORE</h4>
+            <h2 id="displayCompScore">0</h2>
+          </div>
+          <div class="score-box">
+            <h4>YOUR<br />SCORE</h4>
+            <h2 id="displayUserScore">0</h2>
+          </div>
+        </div>
+      </div>
+      <div id="triangle">
+        <div class="straight_line line"></div>
+        <div class="right_line line"></div>
+        <div class="left_line line"></div>
+      </div>
+
+      <div class="main">
+        <div class="main-ii">
+          <div id="stone" class="choice" onclick="stone()">
+            <img src="image/stone.png" alt="stone" />
+          </div>
+          <div id="scissor" class="choice" onclick="scissor()">
+            <img src="image/scissor.png" alt="scissor" />
+          </div>
+        </div>
+        <div class="main-iii">
+          <div id="paper" class="choice" onclick="paper()">
+            <img src="image/paper.png" alt="paper" />
+          </div>
+        </div>
+      </div>
+
+      <div class="played">
+        <div class="items">
+          <p>YOU PICKED</p>
+
+          <div class="a1-user">
+            <div class="a2-user">
+              <div class="a3-user">
+                <div id="uchoice" class="choice">
+                  <img id="user_img" src="" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="between">
+          <h9 id="print-result"></h9><br />
+          <p id="m-text">AGAINST PC</p>
+          <button class="play-again" onclick="play_again_btn()">
+            PLAY AGAIN
+          </button>
+        </div>
+        <div class="items">
+          <p>PC PICKED</p>
+          <div class="a1-comp">
+            <div class="a2-comp">
+              <div class="a3-comp">
+                <div id="cchoice" class="choice">
+                  <img id="comp_img" src="" alt="not displayed" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="rules">
+        <div class="cross" onclick="closed()"><img src="image/X.png" /></div>
+        <h3>Games Rules</h3>
+        <ul>
+          <li>
+            Rock beats scissors, scissors beat<br />
+            paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you’ll<br />
+            count off “rock, paper, scissors,<br />
+            shoot” or just “rock, paper, scissors.”
+          </li>
+          <li>
+            Use rock, paper, scissors to settle<br />
+            minor decisions or simply play to<br />
+            pass the time
+          </li>
+          <li>
+            If both players lay down the same<br />
+            hand, each player lays down another<br />
+            hand
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align: right">
+      <button class="rules-button" onclick="buttonFunction()">RULES</button>
+      <a href="next.html" class="rules-button" id="next-button">NEXT</a>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #89c15e;
+  font-family: Roboto;
+  /* border: 2px solid black; */
+}
+
+#trophy {
+  position: absolute;
+  top: 160px;
+}
+
+#won-next {
+  margin-top: 4rem;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#hurray {
+  font-size: 80px;
+  margin-top: 30px;
+  color: white;
+}
+#won_text {
+  font-size: 50px;
+  margin-top: 10px;
+  color: white;
+}
+.play_again {
+  margin-top: 10px;
+  padding: 1rem 2rem;
+  background-color: white;
+  border-radius: 4px;
+  font-size: large;
+  border: none;
+  text-decoration: none;
+}
+#won_next div button {
+  border: 2px solid black;
+}
+
+.rules-button {
+  border: 3px solid white;
+  padding: 0.5rem 1rem;
+  background-color: #89c15e;
+  margin: 1rem;
+  color: white;
+  border-radius: 4px;
+  font-size: large;
+}
+
+#rules {
+  border: 6px solid white;
+  background-color: #004429;
+  color: white;
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  padding: 0px 25px 20px 30px;
+  border-radius: 9px;
+}
+#rules h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: square;
+}
+.cross {
+  background-color: red;
+  position: relative;
+  left: 13.5rem;
+  top: -30px;
+  width: 50px;
+  height: 50px;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+.cross img {
+  position: relative;
+  top: 10px;
+  left: 14px;
+}
+#rule-tag {
+  /* border: 2px solid black; */
+  align-self: flex-end;
+}

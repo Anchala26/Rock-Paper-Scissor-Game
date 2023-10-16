@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #89c15e;
+  font-family: Roboto;
+}
+.main-m {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.heading {
+  border: 2px solid white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  width: 80%;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+h1 {
+  color: white;
+}
+.score-tag {
+  display: flex;
+  flex-direction: row;
+}
+.score-box {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: azure;
+  width: 8rem;
+  text-align: center;
+  margin: 1rem;
+  padding-top: 0.5rem;
+}
+h2 {
+  font-size: 4rem;
+  /* border: 2px solid black; */
+}
+h4 {
+  /* border: 2px ssolid black; */
+}
+
+.main {
+  /* border: 2px solid; */
+  width: 100%;
+  height: 23rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.main-ii {
+  width: 30rem;
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  /* align-items: center; */
+}
+.main-iii {
+  width: 30rem;
+
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+}
+.choice {
+  background-color: white;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  border: 10px solid;
+  /* opacity: 1 !important; */
+}
+#paper {
+  /* margin-top: 3rem; */
+
+  border: 10px solid #ffa943;
+}
+#scissor {
+  border: 10px solid #bd00ff;
+}
+#stone {
+  border: 10px solid #0074b6;
+}
+#paper:hover,
+#scissor:hover,
+#stone:hover {
+  filter: drop-shadow(0px 0px 20px black);
+}
+.rules-button {
+  border: 3px solid white;
+  padding: 0.5rem 1rem;
+  background-color: #89c15e;
+  margin: 0.1rem 1rem;
+  color: white;
+  border-radius: 4px;
+  font-size: large;
+}
+
+#rules {
+  border: 6px solid white;
+  background-color: #004429;
+  color: white;
+  display: none;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  padding: 0px 25px 20px 30px;
+  border-radius: 9px;
+}
+#rules h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+ul {
+  list-style: square;
+}
+.cross {
+  background-color: red;
+  position: relative;
+  left: 15rem;
+  top: -30px;
+  width: 50px;
+  height: 50px;
+  border: 6px solid white;
+  border-radius: 50%;
+}
+.cross img {
+  position: relative;
+  top: 10px;
+  left: 14px;
+}
+/* --triangle--  */
+
+.line {
+  width: 300px;
+  border: 6px solid black;
+  z-index: 1;
+}
+.right_line {
+  position: relative;
+  top: 220px;
+  left: 80px;
+  transform: rotate(129deg);
+}
+.left_line {
+  position: relative;
+  top: 220px;
+  right: 80px;
+  transform: rotate(50deg);
+}
+.straight_line {
+  position: relative;
+  top: 120px;
+}
+/* next button  */
+#next-button {
+  text-decoration: none;
+  display: none;
+}
+
+/* ----  */
+
+.played {
+  margin-top: 5rem;
+  /* border: 2px solid; */
+  display: none;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-between;
+}
+
+.items p {
+  color: white;
+  /* border: 2px solid; */
+  padding: 3rem 0.2rem;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.between {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+#print-result {
+  color: white;
+  font-size: 3rem;
+}
+#m-text {
+  color: white;
+  font-size: 2rem;
+}
+.play-again {
+  border-radius: 6px;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+}
+
+/* rings after winning  */
+
+.a1-user,
+.a1-comp {
+  border-radius: 50%;
+  border: 20px solid #3b6720;
+  animation: circle 3s ease-in infinite;
+}
+.a2-user,
+.a2-comp {
+  border-radius: 50%;
+  border: 20px solid #1da82bc9;
+  animation: circle 3s ease-in-out infinite;
+  animation-direction: normal;
+}
+.a3-user,
+.a3-comp {
+  border-radius: 50%;
+  border: 25px solid #2e9a2563;
+  box-shadow: 0px 1px 62px 0px #00000021;
+}
+@keyframes circle {
+  0% {
+    transform: scale(1);
+    /* opacity: 0.4; */
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    /* opacity: 0.8; */
+  }
+}
+#uchoice {
+  animation: none !important;
+}
+#cchoice {
+  animation: none;
+}
+#user_img {
+  animation: none;
+}
