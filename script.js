@@ -78,7 +78,7 @@ function hide_comp_rings() {
   a3Comp.style.visibility = "hidden";
   cchoice.style.visibility = "visible";
   a1Comp.style.animation = "none";
-  a2.style.animation = "none";
+  a2Comp.style.animation = "none";
 }
 
 // choice selection by computer
