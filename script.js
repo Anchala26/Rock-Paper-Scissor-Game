@@ -50,12 +50,16 @@ function show_user_rings() {
   a1User.style.visibility = "visible";
   a2User.style.visibility = "visible";
   a3User.style.visibility = "visible";
+  a1User.style.animation = "circle 3s ease-in-out infinite";
+  a2User.style.animation = "circle 3s ease infinite";
 }
 function hide_user_rings() {
   a1User.style.visibility = "hidden";
   a2User.style.visibility = "hidden";
   a3User.style.visibility = "hidden";
   uchoice.style.visibility = "visible";
+  a1User.style.animation = "none";
+  a2User.style.animation = "none";
 }
 
 let a1Comp = document.querySelector(".a1-comp");
@@ -65,12 +69,16 @@ function show_comp_rings() {
   a1Comp.style.visibility = "visible";
   a2Comp.style.visibility = "visible";
   a3Comp.style.visibility = "visible";
+  a1Comp.style.animation = "circle 3s ease-in-out infinite";
+  a2Comp.style.animation = "circle 3s ease-in-out infinite";
 }
 function hide_comp_rings() {
   a1Comp.style.visibility = "hidden";
   a2Comp.style.visibility = "hidden";
   a3Comp.style.visibility = "hidden";
   cchoice.style.visibility = "visible";
+  a1Comp.style.animation = "none";
+  a2Comp.style.animation = "none";
 }
 
 // choice selection by computer

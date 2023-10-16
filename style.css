@@ -220,33 +220,30 @@ ul {
 .a1-comp {
   border-radius: 50%;
   border: 20px solid #3b6720;
-  animation: circle 3s ease-in infinite;
+  animation: circle 3s ease-out infinite;
 }
 .a2-user,
 .a2-comp {
   border-radius: 50%;
   border: 20px solid #1da82bc9;
-  animation: circle 3s ease-in-out infinite;
-  animation-direction: normal;
+  animation: circle 3s ease-out infinite;
 }
 .a3-user,
 .a3-comp {
   border-radius: 50%;
   border: 25px solid #2e9a2563;
   box-shadow: 0px 1px 62px 0px #00000021;
+  /* animation: circle 3s ease-out infinite; */
 }
 @keyframes circle {
   0% {
     transform: scale(1);
-    /* opacity: 0.4; */
   }
   50% {
-    transform: scale(1.2);
-    opacity: 1;
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
-    /* opacity: 0.8; */
   }
 }
 #uchoice {
